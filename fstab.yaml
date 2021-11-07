@@ -1,2 +1,2 @@
-# mountpoints:
-#   /: <shared-folder-url>
+mountpoints:
+  /: https://drive.google.com/drive/folders/1oO1N16Eowk7zRrK0iaeQRB-KRVxk4A_2

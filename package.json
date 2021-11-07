@@ -1,8 +1,8 @@
 {
-  "name": "@adobe/helix-pages-starter",
+  "name": "s-saatland-helix",
   "private": true,
-  "version": "1.0.0",
-  "description": "Starter project for Adobe Helix Pages",
+  "version": "0.0.1",
+  "description": "",
   "scripts": {
     "test": "karma start karma.config.js",
     "integration-test": "mocha integration/*.test.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adobe/helix-pages-starter.git"
+    "url": "git+https://github.com/honstar/s-saatland-helix.git"
   },
-  "author": "Adobe",
+  "author": "honstar",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-pages-starter/issues"
+    "url": "https://github.com/honstar/s-saatland-helix/issues"
   },
-  "homepage": "https://github.com/adobe/helix-pages-starter#readme",
+  "homepage": "https://github.com/honstar/s-saatland-helix#readme",
   "devDependencies": {
     "@babel/core": "7.16.0",
     "@babel/eslint-parser": "7.16.0",
