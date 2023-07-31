@@ -40,6 +40,13 @@
   /* nav height */
   --nav-height: 64px;
 
+  /* section padding */
+  --section-padding: 16px;
+  --section-background-color: #fff;
+
+  /* header */
+  --header-background-color: #bfea86;
+
 }
 
 @font-face {
@@ -62,7 +69,7 @@
 }
 
 body {
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-xs);
   margin: 0;
   font-family: var(--body-font-family);
   line-height: 1.6;
@@ -96,7 +103,11 @@ h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
-p, dl, ol, ul, pre, blockquote {
+p {
+  margin: 0;
+}
+
+dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -229,12 +240,18 @@ main img {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: var(--section-padding) 16px;
+  background-color: var(--section-background-color);
+}
+
+main > .section:last-child {
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: var(--section-padding) 32px;
+    background-color: var(--section-background-color);
   }
 }
 
