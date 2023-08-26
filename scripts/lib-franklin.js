@@ -561,6 +561,10 @@ export function decorateButtons(element) {
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
+      if (a.href.includes('#_blank')) {
+        a.setAttribute('target', '_blank');
+        a.href = a.href.replace('#_blank', '');
+      }
       const up = a.parentElement;
       const twoup = a.parentElement.parentElement;
       if (!a.querySelector('img')) {

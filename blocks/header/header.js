@@ -111,6 +111,12 @@ export default async function decorate(block) {
 
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
+      navSections.querySelectorAll('a').forEach((link) => {
+        if (link.href.includes('#_blank')) {
+          link.setAttribute('target', '_blank');
+          link.href = link.href.replace('#_blank', '');
+        }
+      });
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
         navSection.addEventListener('click', () => {
