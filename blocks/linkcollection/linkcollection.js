@@ -4,7 +4,7 @@ export default function decorate(block) {
   if (isBlankTarget) {
     const list = block.querySelector('ul');
     [...list.children].forEach((li) => {
-      const href = li.firstChild.href;
+      const { href } = li.firstChild;
       li.firstChild.addEventListener('click', (e) => {
         e.preventDefault();
         window.open(href);

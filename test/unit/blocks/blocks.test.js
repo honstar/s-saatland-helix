@@ -14,10 +14,13 @@
 /* eslint-disable no-unused-expressions */
 
 import {
-  decorateBlock,
   decorateMain,
-  loadBlock,
 } from '../../../scripts/scripts.js';
+
+import {
+  decorateBlock,
+  loadBlock,
+} from '../../../scripts/lib-franklin.js';
 
 const ROOT_PATH = '/blocks-test';
 
